@@ -1,0 +1,9 @@
+<div class="product-container">
+  <div class="product" *ngFor="let product of products[category]">
+    <app-items
+      [product]="product"
+      (remove)="removeProduct(product)"
+      (like)="increaseLikes(product)"
+    ></app-items>
+  </div>
+</div>
